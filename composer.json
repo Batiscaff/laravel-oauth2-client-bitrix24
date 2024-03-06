@@ -1,0 +1,39 @@
+{
+    "name": "batiscaff/laravel-oauth2-bitrix24-client",
+    "homepage": "https://github.com/batiscaff/laravel-oauth2-bitrix24-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Batiscaff"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "batiscaff/oauth2-bitrix24": "^0.1.0",
+        "illuminate/contracts": "^8.0|^9.0|^10.0",
+        "illuminate/database": "^8.0|^9.0|^10.0",
+        "illuminate/http": "^8.0|^9.0|^10.0",
+        "illuminate/support": "^8.0|^9.0|^10.0",
+        "league/oauth2-client": "^2.0",
+        "fig/http-message-util": "^1.1.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.23|^7.0",
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelOAuth2B24Client\\": "src/"
+        }
+    },
+    "scripts": {
+        "check": "phpcs src test --standard=PSR12 -sp"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelOAuth2B24Client\\Providers\\OAuth2ServiceProvider"
+            ]
+        }
+    }
+}
